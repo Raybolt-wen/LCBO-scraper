@@ -1,0 +1,15 @@
+# wrangler.toml
+main = "src/index.ts" # Make sure this points to your main file
+name = "my-app-with-cron"
+compatibility_date = "2024-03-20"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "database"
+database_id = "edbccb26-2e9d-4e22-91ff-39e9ac4d996b"
+
+# Cron Trigger configuration
+[triggers]
+# This schedule runs at 4 AM every day.
+crons = ["0 4 * * *"]
