@@ -1,7 +1,11 @@
+import { LCBOResult } from "./types";
+
+
+
 export async function getAllBeverages(options?: {
   firstIndex?: number;
   length?: number;
-}): Promise<any> {
+}): Promise<LCBOResult> {
   const url =
     "https://platform.cloud.coveo.com/rest/search/v2?organizationId=lcboproductionx2kwygnc";
 
