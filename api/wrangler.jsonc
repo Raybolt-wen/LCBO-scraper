@@ -9,7 +9,15 @@
 	"compatibility_date": "2025-09-24",
 	"observability": {
 		"enabled": true
-	}
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "database",
+			"database_id": "edbccb26-2e9d-4e22-91ff-39e9ac4d996b",
+			"migrations_dir": "drizzle"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
